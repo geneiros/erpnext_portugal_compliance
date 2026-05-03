@@ -1,0 +1,6 @@
+# frappe -- needed in tests
+cryptography>=41.0.0
+qrcode>=7.4.2
+lxml>=4.9.0
+zeep>=4.2.1
+requests>=2.31.0

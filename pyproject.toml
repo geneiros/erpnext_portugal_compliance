@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "erpnext_portugal"
+version = "0.1.0"
+description = "Cumprimento da legislação fiscal portuguesa para Frappe / ERPNext v16"
+readme = "README.md"
+license = { file = "license.txt" }
+requires-python = ">=3.10"
+authors = [{ name = "Helder" }]
+keywords = ["frappe", "erpnext", "portugal", "fiscal", "saf-t", "atcud", "qr-code", "iva"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: Office/Business :: Financial :: Accounting",
+    "Natural Language :: Portuguese",
+]
+dependencies = [
+    "cryptography>=41.0.0",
+    "qrcode>=7.4.2",
+    "lxml>=4.9.0",
+    "zeep>=4.2.1",
+    "requests>=2.31.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7.0"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["erpnext_portugal*"]
