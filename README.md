@@ -1,5 +1,9 @@
 # ERPNext Portugal — Cumprimento Fiscal Português
 
+[![Tests](https://github.com/REPLACE_WITH_YOUR_USERNAME/erpnext_portugal_compliance/actions/workflows/tests.yml/badge.svg)](https://github.com/REPLACE_WITH_YOUR_USERNAME/erpnext_portugal_compliance/actions/workflows/tests.yml)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
+
 App Frappe / ERPNext v16 que implementa as obrigações fiscais portuguesas em
 matéria de software de faturação: **ATCUD**, **QR Code**, **assinatura RSA
 encadeada**, **exportação SAF-T (PT)** e **comunicação de séries à AT por
@@ -264,9 +268,38 @@ Pull requests bem-vindos.
 
 ---
 
+## Publicação no GitHub
+
+Para publicar o repositório pela primeira vez:
+
+```bash
+cd erpnext_portugal
+git init -b main
+git add .
+git commit -m "Initial commit: app Frappe para cumprimento fiscal PT"
+git remote add origin https://github.com/<utilizador>/erpnext_portugal_compliance.git
+git push -u origin main
+```
+
+Se o repositório no GitHub já tiver conteúdo (ex.: README criado pelo
+GitHub), começa por sincronizar:
+
+```bash
+git pull origin main --rebase --allow-unrelated-histories
+git push -u origin main
+```
+
+A autenticação faz-se com **Personal Access Token** (Settings → Developer
+settings → Personal access tokens → Fine-grained tokens, com permissão
+`Contents: Read and write` para o repositório). O GitHub CLI (`gh auth
+login`) é uma alternativa mais limpa.
+
+O workflow `.github/workflows/tests.yml` corre automaticamente em cada
+push e pull request para `main` ou `develop`, em Python 3.10, 3.11 e 3.12.
+
 ## Licença
 
-MIT. Ver `license.txt`.
+Apache License 2.0. Ver [LICENSE](LICENSE) e [NOTICE](NOTICE).
 
 ---
 

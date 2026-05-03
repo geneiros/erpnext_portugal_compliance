@@ -1,0 +1,25 @@
+erpnext_portugal_compliance
+Copyright 2026 Helder e contribuidores
+
+Este produto inclui software desenvolvido para cumprimento da legislação
+fiscal portuguesa (Decreto-Lei 28/2019, Portaria 363/2010, Portaria
+195/2020 e respetivos despachos da Autoridade Tributária e Aduaneira).
+
+Distribuído sob a Apache License, Versão 2.0 (ver LICENSE).
+
+Este software depende dos seguintes pacotes de terceiros:
+  - cryptography (Apache 2.0 / BSD)
+  - qrcode (BSD)
+  - lxml (BSD)
+  - zeep (MIT)
+  - requests (Apache 2.0)
+
+Esta app é desenhada para integrar com:
+  - Frappe Framework (MIT)
+  - ERPNext (GPLv3)
+
+A integração com ERPNext (que é GPLv3) faz-se via interfaces públicas
+(hooks, doctypes, custom fields). Esta app não inclui código GPL e pode
+ser distribuída autonomamente sob Apache 2.0. Quando instalada num bench
+com ERPNext, a combinação resultante deve respeitar os termos da GPLv3
+para o conjunto.

@@ -12,6 +12,7 @@ setup(
     description="Cumprimento da legislação fiscal portuguesa para Frappe / ERPNext v16",
     author="Helder",
     author_email="helder@example.com",
+    license="Apache-2.0",
     packages=find_packages(),
     zip_safe=False,
     include_package_data=True,

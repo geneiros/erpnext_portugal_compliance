@@ -7,13 +7,13 @@ name = "erpnext_portugal"
 version = "0.1.0"
 description = "Cumprimento da legislação fiscal portuguesa para Frappe / ERPNext v16"
 readme = "README.md"
-license = { file = "license.txt" }
+license = { file = "LICENSE" }
 requires-python = ">=3.10"
 authors = [{ name = "Helder" }]
 keywords = ["frappe", "erpnext", "portugal", "fiscal", "saf-t", "atcud", "qr-code", "iva"]
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
+    "License :: OSI Approved :: Apache Software License",
     "Operating System :: POSIX :: Linux",
     "Topic :: Office/Business :: Financial :: Accounting",
     "Natural Language :: Portuguese",
